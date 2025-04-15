@@ -1,0 +1,32 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.counterHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.counterFooter {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.counterTitle {
+    font-size: 2rem;
+    color: var(--color-gray);
+}
+
+.counterOutput {
+    color: var(--color-dark);
+    font-size: 7rem;
+    font-weight: bold;
+}
