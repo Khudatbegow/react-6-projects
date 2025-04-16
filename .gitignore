@@ -1,8 +1,0 @@
-# Общие исключения
-node_modules/
-.DS_Store
-dist/
-.env
-.vite/
-.env.local
-*.log
