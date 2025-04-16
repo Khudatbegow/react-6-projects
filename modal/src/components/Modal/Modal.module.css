@@ -1,0 +1,63 @@
+.modalOverlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.modalBody {
+    background-color: #fff;
+    width: 70%;
+    max-width: 500px;
+    max-height: 300px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -30%);
+    transition-delay: 0.2s;
+}
+
+.modalButton {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+    top: 10px;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    background: none;
+    border: none;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.modalImage {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.modalOverlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modalOverlay.show+.modalBody {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+}
